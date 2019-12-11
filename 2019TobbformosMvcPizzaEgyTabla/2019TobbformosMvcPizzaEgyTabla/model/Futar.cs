@@ -48,8 +48,8 @@ namespace TobbbformosPizzaAlkalmazasEgyTabla.model
         }
 
         //public Futar(int futarID, string futarNev, int futarTelefonszam)
-        {
-
-        }
+        //{
+        
+        //}
     }
 }
