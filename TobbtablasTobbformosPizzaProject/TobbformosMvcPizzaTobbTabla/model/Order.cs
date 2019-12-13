@@ -13,6 +13,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Model
         private int courierId;
         private string date;
         private double time;
+        private bool done;
 
         public Order(int orderId, int customerId, int courierId, string date, double time)
         {
@@ -21,6 +22,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Model
             this.courierId = courierId;
             this.date = date;
             this.time = time;
+            this.done = done;
         }
 
         public int getOrderId()
@@ -46,6 +48,10 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Model
         public double getTime()
         {
             return time;
+        }
+        public bool getDone()
+        {
+            return done;
         }
 
     }
