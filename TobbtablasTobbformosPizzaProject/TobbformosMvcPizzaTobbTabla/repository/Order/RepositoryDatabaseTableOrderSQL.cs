@@ -46,7 +46,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
                                 {
                                     bool teljesitve = false;
                                     int teljesitveInt;
-                                    goodResult = int.TryParse(dr["teljesítés"].ToString(), out teljesitveInt);
+                                    goodResult = int.TryParse(dr["teljesitve"].ToString(), out teljesitveInt);
                                     if (teljesitveInt == 1)
                                     {
                                         teljesitve = true;

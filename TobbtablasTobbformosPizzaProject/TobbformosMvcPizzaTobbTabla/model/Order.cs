@@ -15,7 +15,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Model
         private double time;
         private bool done;
 
-        public Order(int orderId, int customerId, int courierId, string date, double time)
+        public Order(int orderId, int customerId, int courierId, string date, double time, bool done)
         {
             this.orderId = orderId;
             this.customerId = customerId;
