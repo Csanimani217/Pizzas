@@ -23,7 +23,6 @@ namespace TobbformosMvcPizzaTobbTabla
         /// <summary>
         /// Tárolja a pizzákat listában
         /// </summary>
-        private Repository repo = new Repository();
 
         bool ujAdatfelvitel = false;
 

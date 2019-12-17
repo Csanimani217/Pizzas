@@ -16,6 +16,15 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
         {
             return customers;
         }
+        public List<string> getCustomersName()
+        {
+            List<string> customersName = new List<string>();
+            foreach (Customer customer in customers)
+            {
+                customersName.Add(customer.getName());
+            }
+            return customersName;
+        }
         public void setCustomer(List<Customer> cusomers)
         {
             this.customers = cusomers;

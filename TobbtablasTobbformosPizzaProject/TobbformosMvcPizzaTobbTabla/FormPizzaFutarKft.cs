@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TobbbformosPizzaAlkalmazasTobbTabla.Repository;
 
 namespace TobbformosMvcPizzaTobbTabla
 {
     public partial class FormPizzaFutarKft : Form
     {
-
+        Repository repo = new Repository();
 
         public FormPizzaFutarKft()
         {

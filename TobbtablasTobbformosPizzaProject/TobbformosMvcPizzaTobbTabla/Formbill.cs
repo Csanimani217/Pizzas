@@ -17,6 +17,7 @@ namespace TobbformosMvcPizzaTobbTabla
         private void tabControlPizzaFutarKFT_Selected(object sender, TabControlEventArgs e)
         {
             beallitSzamlakTabPageindulaskor();
+            feltoltComboBoxotMegrendelokkel();
         }
         
         private void beallitSzamlakTabPageindulaskor()
@@ -25,6 +26,16 @@ namespace TobbformosMvcPizzaTobbTabla
             labelRendelesek.Visible = false;
             dataGridViewTetelek.Visible = false;
             labelTetelek.Visible = false;
+        }
+
+        private void feltoltComboBoxotMegrendelokkel()
+        {
+            comboBoxMegrendelok.DataSource = repo.getCustomersName();
+        }
+
+        private void FormPizzaFutarKft_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

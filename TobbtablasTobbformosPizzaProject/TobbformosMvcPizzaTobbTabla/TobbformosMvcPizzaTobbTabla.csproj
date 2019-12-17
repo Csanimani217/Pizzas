@@ -105,6 +105,9 @@
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizza.cs" />
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizzaSQL.cs" />
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizzaTestData.cs" />
+    <EmbeddedResource Include="Formbill.resx">
+      <DependentUpon>Formbill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPizzaFutarKft.resx">
       <DependentUpon>FormPizzaFutarKft.cs</DependentUpon>
     </EmbeddedResource>
