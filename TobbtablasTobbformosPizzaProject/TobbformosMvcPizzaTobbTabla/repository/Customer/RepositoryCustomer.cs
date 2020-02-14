@@ -12,11 +12,13 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
     partial class Repository
     {
         List<Customer> customers;
-        public List<Customer> getCustomerk()
+
+        public List<Customer> getCustomers()
         {
             return customers;
         }
-        public List<string> getCustomersName()
+
+        public List<string> getCustumersName()
         {
             List<string> customersName = new List<string>();
             foreach (Customer customer in customers)
@@ -51,6 +53,12 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
                 Customer m = new Customer(id, nev, cim);
                 customers.Add(m);
             }
+        }
+
+        public int getCustomerNumber(string megrendeloNev)
+        {
+            Customer customer = customers.Find(c => c.getName() == megrendeloNev);
+            return customer.getID();
         }
     }
 }

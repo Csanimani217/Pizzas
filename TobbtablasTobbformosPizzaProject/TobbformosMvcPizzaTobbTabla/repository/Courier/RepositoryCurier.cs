@@ -18,7 +18,7 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
             return couriers;
         }
 
-        public void setFutarok(List<Courier> futarok)
+        public void setCourier(List<Courier> futarok)
         {
             this.couriers = futarok;
         }
@@ -46,6 +46,6 @@ namespace TobbbformosPizzaAlkalmazasTobbTabla.Repository
                 Courier f = new Courier(id, name, tel);
                 couriers.Add(f);
             }
-        }
+        }       
     }
 }

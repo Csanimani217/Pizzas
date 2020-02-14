@@ -47,10 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormPizzas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formbill.cs">
+    <Compile Include="FormBills.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTestData.cs">
@@ -75,6 +78,7 @@
     <Compile Include="model\ItemDatabase.cs" />
     <Compile Include="model\OrderDatabase.cs" />
     <Compile Include="model\Order.cs" />
+    <Compile Include="model\OrderItemsView.cs" />
     <Compile Include="model\Pizza.cs" />
     <Compile Include="model\PizzaDatabase.cs" />
     <Compile Include="Program.cs" />
@@ -91,6 +95,7 @@
     <Compile Include="repository\Item\RepositoryDatabaseTableItemSQL.cs" />
     <Compile Include="repository\Item\RepositoryDatabaseTableItemTestData.cs" />
     <Compile Include="repository\Item\RepositoryItem.cs" />
+    <Compile Include="repository\OrderItemsView\RepositoryOrderItemsView.cs" />
     <Compile Include="repository\Order\RepositoryDatabaseTableOrder.cs" />
     <Compile Include="repository\Order\RepositoryDatabaseTableOrderSQL.cs" />
     <Compile Include="repository\Order\RepositoryDatabaseTableOrderTestData.cs" />
@@ -105,9 +110,6 @@
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizza.cs" />
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizzaSQL.cs" />
     <Compile Include="repository\Pizza\RepositoryDatabaseTablePizzaTestData.cs" />
-    <EmbeddedResource Include="Formbill.resx">
-      <DependentUpon>Formbill.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormPizzaFutarKft.resx">
       <DependentUpon>FormPizzaFutarKft.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,8 +142,8 @@
     <Content Include="icons\Load-icon.png" />
     <Content Include="icons\Save-icon.png" />
     <Content Include="icons\Tools-icon.png" />
-    <Content Include="sql\csarp %283%29.sql" />
     <Content Include="sql\pizza.sql" />
+    <Content Include="sql\pizza1.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

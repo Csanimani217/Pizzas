@@ -13,6 +13,10 @@ namespace TobbformosMvcPizzaTobbTabla
 {
     public partial class FormPizzaFutarKft : Form
     {
+
+        /// <summary>
+        /// Tárolja a pizzákat listában
+        /// </summary>
         Repository repo = new Repository();
 
         public FormPizzaFutarKft()
@@ -26,6 +30,17 @@ namespace TobbformosMvcPizzaTobbTabla
             this.Size = new Size(1024, 768);
             this.Text = "Pizza Futar KFT.";
         }
+
+        private void tabControlPizzaFutarKFT_Selected(object sender, TabControlEventArgs e)
+        {
+            //Számla készítés
+            beallitSzamlakTabPagetIndulaskor();
+            feltoltComboBoxotMegrendelokkel();
+
+            //Megrendelés készítés
+            fillComboBoxCustomer();
+            createDinamicDataGridViewToOrders();
+        }        
 
         private void megrendelőToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -47,6 +62,9 @@ namespace TobbformosMvcPizzaTobbTabla
             tabControlPizzaFutarKFT.SelectTab("tabPageSzamlak");
         }
 
-        
+        private void megrendelésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControlPizzaFutarKFT.SelectTab("tabPageMegrendeles");
+        }
     }
 }
